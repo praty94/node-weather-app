@@ -34,6 +34,14 @@ app.get("", (req, res) => {
     });
 })
 
+app.get("/about", (req, res) => {
+    res.render("about");
+})
+
+app.get("/help", (req, res) => {
+    res.render("help");
+})
+
 //API endpoint
 app.get("/weather", async(req, res) => {
     const { address } = req.query;
