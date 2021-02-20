@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <title>Home page</title>
+</head>
+
+<body>
+    {{>header}}
+    <div class="main-container container px-4 py-2">
+        <label for="address" class="form-label">Enter address to search weather</label>
+        <div class="input-group">
+            <input id="address" type="text" class="form-control" placeholder="Enter address">
+            <button id="search-btn" type="button" class="btn btn-primary">Search</button>
+        </div>        
+        <div id="responseAlert" class="alert alert-info hide" role="alert"></div>        
+        <div id="errorAlert" class="alert alert-danger hide" role="alert">Please enter address to search</div>
+    </div>
+</body>
+
+<footer>
+    {{>footer}}
+</footer>
+
+</html>
